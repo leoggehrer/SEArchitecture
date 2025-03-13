@@ -26,7 +26,7 @@ Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresyst
 
 ### Warum ist eine gute Software-Architektur wichtig?
 
-- Erleichtert die Entwicklung durch klare Strukturen.
+- Erleichtert die Entwicklung durch eine klare Strukturen.
 - Verbessert Wartung & Erweiterbarkeit, da Änderungen gezielt vorgenommen werden können.
 - Erhöht Zuverlässigkeit & Stabilität, indem Fehlerquellen minimiert werden.
 - Unterstützt Skalierung für größere Nutzerzahlen oder höhere Lasten.
@@ -34,7 +34,7 @@ Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresyst
 Fazit
 Eine durchdachte Software-Architektur ist entscheidend für den Erfolg eines Softwareprojekts. Sie sorgt für eine effiziente Entwicklung, erleichtert die Wartung und stellt sicher, dass das System langfristig leistungsfähig und anpassbar bleibt.
 
-
+![Software-Architektur](/img/systemstructure.png)
 
 Die Architektur besteht aus mehreren Schichten, die in drei Hauptbereiche unterteilt sind: **Frontend**, **Backend** und **Qualitätssicherung**. Die Kommunikation zwischen diesen Komponenten erfolgt über eine **Web API**.
 
