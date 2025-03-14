@@ -27,7 +27,7 @@ Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresyst
 
 ### Warum ist eine gute Software-Architektur wichtig?
 
-- Erleichtert die Entwicklung durch eine klare Strukturen.
+- Erleichtert die Entwicklung durch klare Strukturen.
 - Verbessert Wartung & Erweiterbarkeit, da Änderungen gezielt vorgenommen werden können.
 - Erhöht Zuverlässigkeit & Stabilität, indem Fehlerquellen minimiert werden.
 - Unterstützt Skalierung für größere Nutzerzahlen oder höhere Lasten.
@@ -52,7 +52,7 @@ Das Backend ist in drei Hauptmodule unterteilt:
 
 #### Common Modul (Gelber Block)
 
-Dieses Modul beinhaltet Schnittstellen und allgemeine Komponentne für das gesamte System.
+Dieses Modul beinhaltet Schnittstellen und allgemeine Komponenten für das gesamte System.
 
 - Enthält:
   - **Contracts** – Beinhaltet Schnittstellen für die Kommunikation, Datenobjekte und Komponenten.
@@ -60,7 +60,7 @@ Dieses Modul beinhaltet Schnittstellen und allgemeine Komponentne für das gesam
 
 #### Logic Modul (Orangefarbener Block)
 
-In dieser Einheit befindet sich der vollständige Datenzugriff, die gesamte Geschaeftslogik und stellt somit den zentralen Baustein des Systems dar.
+In dieser Einheit befindet sich der vollständige Datenzugriff, die gesamte Geschäftslogik und stellt somit den zentralen Baustein des Systems dar.
 
 - Enthält:
   - **Contracts** – Definiert Geschäftslogik-Schnittstellen.
@@ -69,7 +69,7 @@ In dieser Einheit befindet sich der vollständige Datenzugriff, die gesamte Gesc
 
 #### Web API (Blauer Block)
 
-Dieses Modul stellt den API (Aplication Programming Interface) Zugriff auf das System über das Netzwerk zur Verfügung. Es dient als Vermittler zwischen der Geschäftslogik und den Klienten. Zusätlich bietet diese API auch die Möglichkeit, dass heterogene Systeme an den **Backend** angebunden werden können.
+Dieses Modul stellt den API (Application Programming Interface) Zugriff auf das System über das Netzwerk zur Verfügung. Es dient als Vermittler zwischen der Geschäftslogik und den Klienten. Zusätzlich bietet diese API auch die Möglichkeit, dass heterogene Systeme an den **Backend** angebunden werden können.
 
 - Enthält:
   - **Models** - Datenobjekte für die Kommunikation nach außen.
