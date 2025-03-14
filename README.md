@@ -18,6 +18,7 @@ Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresyst
     - Schichtenarchitektur (z. B. Präsentations-, Geschäfts- und Datenhaltungsschicht).
     - Microservices (modulare, unabhängige Services).
     - MVC (Model-View-Controller) für Webanwendungen.
+    - MVVM (Model-View-ViewModel) für WPF-Anwendungen
 - Qualitätsmerkmale
   - Wartbarkeit: Leicht anpassbar an neue Anforderungen.
   - Skalierbarkeit: Kann wachsen und größere Lasten bewältigen.
@@ -31,8 +32,13 @@ Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresyst
 - Erhöht Zuverlässigkeit & Stabilität, indem Fehlerquellen minimiert werden.
 - Unterstützt Skalierung für größere Nutzerzahlen oder höhere Lasten.
 
-Fazit
+**Zusammenfassung:**
+
 Eine durchdachte Software-Architektur ist entscheidend für den Erfolg eines Softwareprojekts. Sie sorgt für eine effiziente Entwicklung, erleichtert die Wartung und stellt sicher, dass das System langfristig leistungsfähig und anpassbar bleibt.
+
+## Architektur im Unterricht
+
+Im Unterricht wird die Software-Architektur anhand eines praktischen Beispiels vermittelt. Die Studierenden lernen, wie man eine Anwendung in verschiedene Schichten unterteilt und wie diese Schichten miteinander interagieren. Dabei wird besonderer Wert auf die Trennung von Verantwortlichkeiten und die Wiederverwendbarkeit der Komponenten gelegt. Die folgende Abbildung zeigt die verwendete Systemstruktur und bietet einen Überblick über die Komponenten und deren Interaktionen.
 
 ![Software-Architektur](/img/systemstructure.png)
 
@@ -40,28 +46,34 @@ Die Architektur besteht aus mehreren Schichten, die in drei Hauptbereiche untert
 
 ---
 
-## Backend
+### Backend
 
 Das Backend ist in drei Hauptmodule unterteilt:
 
-### Web API (Blauer Block)
+#### Common Modul (Gelber Block)
 
-- Enthält **Controllers** und **Models**.
-- Dient als Schnittstelle zwischen Frontend und Backend-Logik.
-- Ist für die Verarbeitung der Anfragen und das Bereitstellen der Daten zuständig.
-
-### Common Modul (Gelber Block)
+Dieses Modul beinhaltet Schnittstellen und allgemeine Komponentne für das gesamte System.
 
 - Enthält:
-  - **Contracts** – Definiert Schnittstellen für die Kommunikation.
-  - **Modules** – Enthält wiederverwendbare Module.
+  - **Contracts** – Beinhaltet Schnittstellen für die Kommunikation, Datenobjekte und Komponenten.
+  - **Modules** – Enthält wiederverwendbare Komponenten (z.B.: Konfiguration).
 
-### Logic Modul (Orangefarbener Block)
+#### Logic Modul (Orangefarbener Block)
+
+In dieser Einheit befindet sich der vollständige Datenzugriff, die gesamte Geschaeftslogik und stellt somit den zentralen Baustein des Systems dar.
 
 - Enthält:
   - **Contracts** – Definiert Geschäftslogik-Schnittstellen.
   - **DataContext** – Datenbankzugriff und ORM (Object-Relational Mapping).
   - **Entities** – Datenmodelle für die Anwendung.
+
+#### Web API (Blauer Block)
+
+Dieses Modul stellt den API (Aplication Programming Interface) Zugriff auf das System über das Netzwerk zur Verfügung. Es dient als Vermittler zwischen der Geschäftslogik und den Klienten. Zusätlich bietet diese API auch die Möglichkeit, dass heterogene Systeme an den **Backend** angebunden werden können.
+
+- Enthält:
+  - **Models** - Datenobjekte für die Kommunikation nach außen.
+  - **Controllers** - Komponenten zum Empfangen von Abfragen und Aufbereitung der Anfrageergebnissen.
 
 Die **Web API** kommuniziert mit den **Common**- und **Logic**-Modulen, um Geschäftslogik auszuführen und Daten bereitzustellen.
 
