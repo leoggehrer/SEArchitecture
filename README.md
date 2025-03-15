@@ -112,3 +112,7 @@ Beide Frontend-Technologien kommunizieren über das **Internet** mit der **Web A
 ## Fazit
 
 Diese Architektur trennt das System in eine **klare Schichtenstruktur** mit einer **gut definierten API**, einer **modularen Backend-Logik** und **Qualitätssicherung** durch automatisierte Tests. Sie ist sowohl für **Web- als auch Desktop-Anwendungen** ausgelegt.
+
+## Umsetzung der Architektur
+
+Um dieses Konzept in der Praxis zu verwenden, finden Sie hier eine Beispielanwendung zur Orientierung für weiter Beispiele im Unterricht.
