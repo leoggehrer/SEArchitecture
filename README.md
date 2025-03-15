@@ -115,4 +115,4 @@ Diese Architektur trennt das System in eine **klare Schichtenstruktur** mit eine
 
 ## Umsetzung der Architektur
 
-Um dieses Konzept in der Praxis zu verwenden, finden Sie [hier](https://github.com/leoggehrer/SEArchitecture/blob/main/Implementation.md) eine Beispielanwendung zur Orientierung für weiter Beispiele im Unterricht.
+Um dieses Konzept in der Praxis zu verwenden, finden Sie [hier](https://github.com/leoggehrer/SEArchitecture/blob/main/implementation.md) eine Beispielanwendung zur Orientierung für weiter Beispiele im Unterricht.
