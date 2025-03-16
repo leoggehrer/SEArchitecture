@@ -36,18 +36,19 @@ Das Datenmodell für ***ContactManager*** hat folgenden Aufbau:
 
 ### Definition von ***Contact***
 
-| Name | Type | MaxLength | Nullable |Unique|Db-Field|Access|
-|------|------|-----------|----------|------|--------|------|
-| Id   | int  |-----------|----------|------| Yes    | R    |
-| FirstName | String | 64 | No | No | Yes | RW |
-| LastName  | String | 64 | No | No | Yes | RW |
-| Company   | String | 128 | No | No | Yes | RW |
-| Email* | String | 128 | Yes | Yes | Yes | RW |
-| PhoneNumber* | String | 32 | Yes | Yes | Yes | RW |
-| Address | String | 256 | Yes | No | Yes | RW |
-| Note | String | 1024 | Yes | No | Yes | RW |
+| Name         | Type | MaxLength | Nullable |Unique|Db-Field|Access|
+|--------------|------|-----------|----------|------|--------|------|
+| Id           | int    |------|-----|-----| Yes  | R  |
+| FirstName    | String | 64   | No  | No  | Yes  | RW |
+| LastName     | String | 64   | No  | No  | Yes  | RW |
+| Company      | String | 128  | No  | No  | Yes  | RW |
+| Email*       | String | 128  | Yes | Yes | Yes+ | RW |
+| PhoneNumber* | String | 32   | Yes | Yes | Yes+ | RW |
+| Address      | String | 256  | Yes | No  | Yes  | RW |
+| Note         | String | 1024 | Yes | No  | Yes  | RW |
 
-*...Einer von beiden darf Nullable sein.
+*...einer von beiden darf leer sein.
++...beide zusammen sind eindeutig
 
 ## Aufgaben  
 
@@ -63,31 +64,40 @@ Das System muss einige Geschäftsregeln umsetzen. Diese Regeln werden im Backend
 
 Für den ***ContactManager*** sind folgende Regeln definiert:
 
-| Rule | Subject | Type | Operation | Description | Note |
-|------|---------|------|-----------|-------------|------|
-|**A1**| Contact |      |           |             |      |
-| | |**WENN**| | eine Kontakt erstellt oder bearbeitet wird, |  |
-| | |**DANN**| | muss `FirstName` und `LastName` festgelegt sein, | |
-| | | | ODER | `Company` muss definiert sein. |  |
-|**A2**| Contact |      |           |             |      |
-| | |**WENN**| | eine Kontakt erstellt oder bearbeitet wird und `FirstName` und `LastName` definiert wird, |  |
-| | |**DANN**| | muss die Länge von `FirstName` >= 2 und die Länge von `LastName` >= 2 sein. | |
-|**A3**| Contact |      |           |             |      |
-| | |**WENN**| | eine Kontakt erstellt oder bearbeitet wird und `Company` definiert wird, |  |
-| | |**DANN**| | muss die Länge von `Company` >= 2 sein | |
-|**B1**| Contact |      |           |             |      |
-| | |**WENN**| | eine Kontakt erstellt oder bearbeitet wird, |  |
-| | |**DANN**| | darf der Wert für `Email` null sein | |
-| | | | ODER | der Wert für 'PhoneNumber' darf null sein. |  |
-|**B2**| Contact | | | | |
-| | |**WENN**| | ein Kontakt erstellt oder bearbeitet wird, und der Wert für `Email` gesetzt ist, | |
-| | |**DANN**| | muss der Wert eindeutig sein. | |
-|**B3**| Contact | | | | |
-| | |**WENN**| | ein Kontakt erstellt oder bearbeitet wird, und der Wert für `PhoneNumber` gesetzt ist, | |
-| | |**DANN**| | muss der Wert eindeutig sein. | |
-|**B4**| Contact | | | | |
-| | |**WENN**| | ein Kontakt erstellt oder bearbeitet wird, und der Wert für `Email` und `PhoneNumber` gesetzt ist, | |
-| | |**DANN**| | müssen die Werte eindeutig sein. | |
+| Rule | Subject | Type   | Operation | Description | Note |
+|------|---------|--------|-----------|-------------|------|
+|**A1**| Contact |        |           |             |      |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | muss `FirstName` und `LastName` festgelegt sein, | |
+|      |         |        | ODER      | `Company` muss definiert sein. |  |
+|**A2**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird und `FirstName` und `LastName` definiert ist, |  |
+|      |         |**DANN**|           | muss die Länge von `FirstName` >= 2 und die Länge von `LastName` >= 2 sein. | |
+|**A3**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird und `Company` definiert ist, |  |
+|      |         |**DANN**|           | muss die Länge von `Company` >= 2 sein | |
+|**B1**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | darf der Wert für `Email` leer sein. | |
+|**B2**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | darf der Wert für `Email` nicht leer sein | |
+|      |         |        | UND       | und das Format muss einer Email enstprechen. |  |
+|**B3**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | darf der Wert für `PhoneNumber` leer sein. | |
+|**B4**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | darf der Wert für `PhoneNumber` nicht leer sein | |
+|      |         |        | UND       | und das Format muss einer Telefonnummer enstprechen. |  |
+|**B5**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | muss der Wert für `Email` definiert sein | |
+|      |         |        | ODER      | es muss der Wert für `PhoneNumber` definiert sein |  |
+|      |         |        | ODER      | beide Werte müssen definiert sein. |  |
+|**B6**| Contact |        |           | | |
+|      |         |**WENN**|           | eine Kontakt erstellt oder bearbeitet wird, |  |
+|      |         |**DANN**|           | muss der Wert für `Email` und er Wert für `PhoneNumber` eindeutig sein. | |
 
 #### Unit-Tests  
 

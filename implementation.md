@@ -86,11 +86,11 @@ Die fertige Lösung finden Sie [hier](https://github.com/leoggehrer/ContactManag
 
 Dieses Kapitel folgt zu einem späteren Zeitpunkt!
 
-### Erstellung der `WebApi` 'ContactManager.WebApi'
+### Erstellung des `WebServers` 'ContactManager.WebApi'
 
 | Schritt      | Aktion | Note |
 |--------------|--------|------|
-| **1**        | Fügen Sie der `Solution` ein **ASP.NET Core Web App** mit dem Namen **ContactManager.WebApi** hinzu. |  |
+| **1**        | Fügen Sie der `Solution` ein **ASP.NET Core Web App** Projekt mit dem Namen **ContactManager.WebApi** hinzu. |  |
 | **1.1**      | Verbinden Sie das Projekt **ContactManager.WebApi** mit dem Projekt **ContactManager.Logic**. | |
 | **2**        | Installieren Sie die folgenden 'NuGet'-Packages. | |
 | **2.1**      | 'NuGet'-Packages für das Verwenden des **Dynamic Linq**. | |
@@ -110,6 +110,18 @@ Dieses Kapitel folgt zu einem späteren Zeitpunkt!
 | **6.1**      | Erstellen Sie die Klasse `SystemController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/SystemController.cs). |
 | **6.2**      | Erstellen Sie die Klasse `ContractsController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/ContactsController.cs). |
 
+### Erstellung der `MVVM-App` 'ContactManager.MVVMApp'
+
+| Schritt      | Aktion | Note |
+|--------------|--------|------|
+| **1**        | Fügen Sie der `Solution` ein **Avalonia.NET MVVM App** Projekt mit dem Namen **ContactManager.MVVMApp** hinzu. |  |
+| **1.1**      | Verbinden Sie das Projekt **ContactManager.MVVMApp** mit dem Projekt **ContactManager.Common**. | |
+| **2**        | Erstellen und Anpassen der **AppSettings**. |  |
+| **2.1**      | Erstellen der Datei `appsettings.json`. | Siehe [hier](). |
+| **2.2**      | Erstellen der Datei `appsettings.Development.json`. | Siehe [hier](). |
+| **3**        | Erstellen Sie einen Ordner mit dem Name **Models**. |  |
+| **3.1**      | Erstellen Sie die Klasse `ModelObject` im Ordner **Models**. | Siehe [hier](). |
+| **3.2**      | Erstellen Sie die Klasse `Contact` im Ordner **Models**. | Siehe [hier](). |
 
 ## Fazit
 
