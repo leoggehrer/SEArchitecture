@@ -117,11 +117,11 @@ Dieses Kapitel folgt zu einem späteren Zeitpunkt!
 | **1**        | Fügen Sie der `Solution` ein **Avalonia.NET MVVM App** Projekt mit dem Namen **ContactManager.MVVMApp** hinzu. |  |
 | **1.1**      | Verbinden Sie das Projekt **ContactManager.MVVMApp** mit dem Projekt **ContactManager.Common**. | |
 | **2**        | Erstellen und Anpassen der **AppSettings**. |  |
-| **2.1**      | Erstellen der Datei `appsettings.json`. | Siehe [hier](). |
-| **2.2**      | Erstellen der Datei `appsettings.Development.json`. | Siehe [hier](). |
+| **2.1**      | Erstellen der Datei `appsettings.json`. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp/blob/master/ContactManager.MVVMApp/appsettings.json). |
+| **2.2**      | Erstellen der Datei `appsettings.Development.json`. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp/blob/master/ContactManager.MVVMApp/appsettings.Development.json). |
 | **3**        | Erstellen Sie einen Ordner mit dem Name **Models**. |  |
-| **3.1**      | Erstellen Sie die Klasse `ModelObject` im Ordner **Models**. | Siehe [hier](). |
-| **3.2**      | Erstellen Sie die Klasse `Contact` im Ordner **Models**. | Siehe [hier](). |
+| **3.1**      | Erstellen Sie die Klasse `ModelObject` im Ordner **Models**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp/blob/master/ContactManager.MVVMApp/Models/ModelObject.cs). |
+| **3.2**      | Erstellen Sie die Klasse `Contact` im Ordner **Models**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp/blob/master/ContactManager.MVVMApp/Models/Contact.cs). |
 
 ## Fazit
 
