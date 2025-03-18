@@ -75,7 +75,7 @@ Die fertige Lösung finden Sie [hier](https://github.com/leoggehrer/ContactManag
 | **4.1**      | Erstellen Sie eine Schnittstelle mit dem Namen `IContext`. |  |
 | **4.2**      | Definieren Sie die Eigenschaften und Methoden von `IContext`. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithLogic/blob/master/ContactManager.Logic/Contracts/IContext.cs). |
 | **5**        | Erstellen Sie einen Ordner mit dem Name **DataContext**. | Hier befindet sich der Datenzugriff. |
-| **5.1**      | Erstellen Sie die Klasse `DataContext` im Ordner **DataContext**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithLogic/blob/master/ContactManager.Logic/DataContext/ContactContext.cs). |
+| **5.1**      | Erstellen Sie die Klasse `ContactContext` im Ordner **DataContext**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithLogic/blob/master/ContactManager.Logic/DataContext/ContactContext.cs). |
 | **5.2**      | Erstellen Sie die Klasse `Factory` im Ordner **DataContext**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithLogic/blob/master/ContactManager.Logic/DataContext/Factory.cs). |
 
 > **HINWEIS:** Die **Solution** muss übersetzbar sein!
