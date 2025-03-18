@@ -29,7 +29,7 @@ Um die beschriebene Architektur in die Praxis umzusetzen, betrachten wir ein ein
 |--------------|--------|------|
 | **1**        | Erstellen Sie eine `Solution` mit dem Namen **ContactManager** erstellt. | Verwenden Sie VS2022, VSCode oder Rider |
 
-### Erstellung des `Bibliothek` 'ContactManager.Common'
+### Erstellung der `Bibliothek` 'ContactManager.Common'
 
 | Schritt      | Aktion | Note |
 |--------------|--------|------|
@@ -108,7 +108,7 @@ Dieses Kapitel folgt zu einem späteren Zeitpunkt!
 | **5.3**      | Erstellen Sie die Klasse `Contact` im Ordner **Models**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Models/Contact.cs). |
 | **6**        | Erstellen von **Controllers**. |  |
 | **6.1**      | Erstellen Sie die Klasse `SystemController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/SystemController.cs). |
-| **6.2**      | Erstellen Sie die Klasse `ContractsController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/ContactsController.cs). |
+| **6.2**      | Erstellen Sie die Klasse `ContactsController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/ContactsController.cs). |
 
 ### Erstellung der `MVVM-App` 'ContactManager.MVVMApp'
 
