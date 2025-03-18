@@ -110,6 +110,10 @@ Dieses Kapitel folgt zu einem späteren Zeitpunkt!
 | **6.1**      | Erstellen Sie die Klasse `SystemController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/SystemController.cs). |
 | **6.2**      | Erstellen Sie die Klasse `ContactsController` im Ordner **Controllers**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithWebApi/blob/master/ContactManager.WebApi/Controllers/ContactsController.cs). |
 
+> **HINWEIS:** Die **Solution** muss übersetzbar sein!
+
+Die fertige Lösung finden Sie [hier](https://github.com/leoggehrer/ContactManagerWithWebApi).
+
 ### Erstellung der `MVVM-App` 'ContactManager.MVVMApp'
 
 | Schritt      | Aktion | Note |
@@ -122,6 +126,10 @@ Dieses Kapitel folgt zu einem späteren Zeitpunkt!
 | **3**        | Erstellen Sie einen Ordner mit dem Name **Models**. |  |
 | **3.1**      | Erstellen Sie die Klasse `ModelObject` im Ordner **Models**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp/blob/master/ContactManager.MVVMApp/Models/ModelObject.cs). |
 | **3.2**      | Erstellen Sie die Klasse `Contact` im Ordner **Models**. | Siehe [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp/blob/master/ContactManager.MVVMApp/Models/Contact.cs). |
+
+> **HINWEIS:** Die **Solution** muss übersetzbar sein!
+
+Die fertige Lösung finden Sie [hier](https://github.com/leoggehrer/ContactManagerWithMVVMApp).
 
 ## Fazit
 
