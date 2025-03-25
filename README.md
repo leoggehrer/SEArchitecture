@@ -1,6 +1,6 @@
 # Software-Architektur
 
-Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresystems. Sie umfasst die Organisation der Komponenten, deren Beziehungen untereinander sowie die Prinzipien, nach denen sie entwickelt und weiterentwickelt werden. Die Architektur dient als Blaupause für die Entwicklung, Wartung und Erweiterung einer Software.
+Die Software-Architektur beschreibt die grundlegende Struktur eines Softwaresystems. Sie umfasst die Organisation der Komponenten, deren Beziehungen untereinander sowie die Prinzipien, nach denen sie entwickelt und weiterentwickelt werden. Die Architektur dient als **Blaupause** für die Entwicklung, Wartung und Erweiterung einer Software.
 
 ## Hauptbestandteile einer Software-Architektur
 
