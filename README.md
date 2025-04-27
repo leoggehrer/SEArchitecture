@@ -116,3 +116,7 @@ Diese Architektur trennt das System in eine **klare Schichtenstruktur** mit eine
 ## Umsetzung der Architektur
 
 Um dieses Konzept in der Praxis zu verwenden, finden Sie [hier](https://github.com/leoggehrer/SEArchitecture/blob/main/implementation.md) eine Beispielanwendung zur Orientierung für weiter Beispiele im Unterricht.
+
+## Umsetzung der Architektur mit dem SETemplate
+
+Die Umsetzung der Architektur kann auch mit der SETemplate erfolgen. Sie finden die Dokumentation dazu [hier](https://github.com/leoggehrer/SETemplate).
